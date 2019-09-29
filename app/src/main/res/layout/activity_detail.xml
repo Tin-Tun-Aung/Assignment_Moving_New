@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.DetailActivity">
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close_black_24dp"
+         />
+    <TextView
+        android:id="@+id/tv_black_panther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_close"
+        android:gravity="center"
+        android:text="Annihilation"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_fantasy"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_marginLeft="110dp"
+        android:gravity="center_horizontal"
+        android:text="Fantasy"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_forward_select"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_fantasy"
+        android:gravity="center_horizontal"
+        android:text="/"
+        android:textColor="#aaa"
+        />
+
+    <TextView
+        android:id="@+id/tv_science_fiction"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_forward_select"
+        android:gravity="center_horizontal"
+        android:text="Mystery"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_science_fiction"
+        android:gravity="center_horizontal"
+        android:text="."
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/tv_dot"
+        android:gravity="center_horizontal"
+        android:text="2hours"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="7.5"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_rating_site"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_toRightOf="@id/tv_rating"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="97%"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_critic_value"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_toRightOf="@id/tv_rating_site"
+        android:gravity="end"
+        android:layout_marginTop="10dp"
+        android:text="92%"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_imdb"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_marginLeft="95dp"
+        android:gravity="start"
+        android:text="IMDB"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_rotten_tomato"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_toRightOf="@id/tv_imdb"
+        android:gravity="start"
+        android:text="Rotten Tomato"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_meatcritic"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_toRightOf="@id/tv_rotten_tomato"
+        android:gravity="start"
+        android:text="Metacritic"
+        android:textColor="#aaa" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/vv_card"
+        android:layout_below="@id/tv_meatcritic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="100dp">
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_below="@id/vv_card"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="kdknjkdnjnjkdnjkdnjkdnjkd"
+        android:layout_height="80dp"/>
+    <TextView
+        android:id="@+id/tv_read_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="Read more"/>
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_toRightOf="@id/tv_read_more"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    <Button
+        android:id="@+id/btn_buy_tickets"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/iv_down"
+        android:layout_centerHorizontal="true"
+        android:text="Buy Tickets"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/tv_cast"
+        android:layout_below="@id/btn_buy_tickets"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Cast"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_cast"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rv_cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

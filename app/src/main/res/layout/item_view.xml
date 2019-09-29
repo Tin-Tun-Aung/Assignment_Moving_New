@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        app:cardCornerRadius="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/building" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_black_panther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_image"
+        android:gravity="center"
+        android:text="Black Panther"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_fantasy"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_marginLeft="75dp"
+        android:gravity="center_horizontal"
+        android:text="Fantasy"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_forward_select"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_fantasy"
+        android:gravity="center_horizontal"
+        android:text="/"
+        android:textColor="#aaa"
+        />
+
+    <TextView
+        android:id="@+id/tv_science_fiction"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_forward_select"
+        android:gravity="center_horizontal"
+        android:text="Science fiction"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_toRightOf="@id/tv_science_fiction"
+
+        android:gravity="center_horizontal"
+        android:text="."
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_black_panther"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/tv_dot"
+        android:gravity="center_horizontal"
+        android:text="2h 15m"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="7.5"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_rating_site"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_toRightOf="@id/tv_rating"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="97%"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_critic_value"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fantasy"
+        android:layout_toRightOf="@id/tv_rating_site"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="92%"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_imdb"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_marginLeft="75dp"
+        android:gravity="center_horizontal"
+        android:text="IMDB"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_rotten_tomato"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_toRightOf="@id/tv_imdb"
+        android:gravity="center_horizontal"
+        android:text="Rotten Tomato"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tv_meatcritic"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rating"
+        android:layout_toRightOf="@id/tv_rotten_tomato"
+        android:gravity="center_horizontal"
+        android:text="Metacritic"
+        android:textColor="#aaa" />
+
+    <Button
+        android:id="@+id/btn_buy_tickets"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_imdb"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Buy Tickets"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_buy_tickets"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+
+
+</RelativeLayout>
